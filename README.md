@@ -12,21 +12,30 @@ import pandas as pd
 sbic_explain = pd.read_parquet("./SBIC-Explain.parque.gzip")
 ```
 
-### General metrics
+### Dataset structure:
 
-| Metric    | Value |
-| -------- | ------- |
-| Instances  | 123596    |
-| Posts  | 30899    |
+|   Column     |       Non-Null | Count |  Dtype  |
+| -------- | ------- | -------- | ------- |
+| base_model   |     123596 | non-null |  object 
+ | set   |             123596 | non-null |  object | 
+ | post   |            123596 | non-null |  object | 
+ | is_offensive   |    123596 | non-null |  float64 |
+ | targetMinority   |  123596 | non-null |  object | 
+ | targetCategory   |  123596 | non-null |  object | 
+ | targetStereotype   |123596 | non-null |  object | 
+ | dataSource   |      123596 | non-null |  object | 
+ | tier 1 |            123596 | non-null |  object | 
+ | tier 2 |            123596 | non-null |  object | 
+ | tier 3 |            123596 | non-null |  object | 
 
-### Number of instances per model
+### Number of instances per model and per NLE tier type
 
-| base_model                |   count |
-|:--------------------------|--------:|
-| Falcon3-10B-Instruct-Q8_0 |   30899 |
-| Gemma-3-27b-it-Q4_0       |   30899 |
-| Phi4-14B-Q8_0             |   30899 |
-| Qwen3-14B-Q8_0            |   30899 |
+| base_model                |   tier 1 |   tier 2 |   tier 3 |
+|:--------------------------|---------:|---------:|---------:|
+| Falcon3-10B-Instruct-Q8_0 |    30899 |    30899 |    30899 |
+| Gemma-3-27b-it-Q4_0       |    30899 |    30899 |    30899 |
+| Phi4-14B-Q8_0             |    30899 |    30899 |    30899 |
+| Qwen3-14B-Q8_0            |    30899 |    30899 |    30899 |
 
 ### Statistics of `is_offensive` annotation.
 
