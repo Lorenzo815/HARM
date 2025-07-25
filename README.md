@@ -28,6 +28,7 @@ sbic_explain = pd.read_parquet("./SBIC-Explain.parque.gzip")
  | tier 2 |            123596 | non-null |  object | 
  | tier 3 |            123596 | non-null |  object | 
 
+
 ### Number of instances per model and per NLE tier type
 
 | base_model                |   tier 1 |   tier 2 |   tier 3 |
@@ -48,6 +49,24 @@ sbic_explain = pd.read_parquet("./SBIC-Explain.parque.gzip")
 | 50%   |       0.5      |
 | 75%   |       1        |
 | max   |       1        |
+
+### Instance sample example
+
+```json
+{
+ 'base_model': 'Qwen3-14B-Q8_0',
+ 'set': 'train',
+ 'post': "just like girls can't be a hoe.... guys can't hit a girl back... it's a double standard that will forever exist....",
+ 'is_offensive': 0.75,
+ 'targetMinority': '["women"]',
+ 'targetCategory': '["gender"]',
+ 'targetStereotype': '["are all hoes", "deserve to be hurt", "should be called hoes", "should be hit if they hit first"]',
+ 'dataSource': 't/davidson',
+ 'tier 1': 'The statement implies that there is an unfair double standard between how men and women are treated in relationships, specifically regarding behavior like being "a hoe" or defending oneself by hitting back. This can be offensive because it generalizes people based on gender, reinforces harmful stereotypes, and suggests that women are judged more harshly for similar actions than men, which perpetuates inequality.',
+ 'tier 2': 'The statement reinforces harmful stereotypes by implying that girls are judged harshly for certain behaviors while boys are not held to the same standards, which perpetuates inequality and disrespect. It also suggests that men should not defend themselves, which can enable harmful behavior. These ideas contribute to a culture of sexism and are therefore offensive.',
+ 'tier 3': 'The statement reinforces harmful stereotypes about women, implying they are "all hoes" and suggesting they "deserve to be hurt" or "should be hit if they hit first." This perpetuates a double standard that unfairly targets women, reinforcing gender-based prejudice and violence. It is offensive because it dehumanizes and justifies mistreatment based on gender.'
+ }
+```
 
 # References
 
