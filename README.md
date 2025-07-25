@@ -54,17 +54,17 @@ sbic_explain = pd.read_parquet("./SBIC-Explain.parque.gzip")
 
 ```json
 {
- 'base_model': 'Qwen3-14B-Q8_0',
- 'set': 'train',
- 'post': "just like girls can't be a hoe.... guys can't hit a girl back... it's a double standard that will forever exist....",
- 'is_offensive': 0.75,
- 'targetMinority': '["women"]',
- 'targetCategory': '["gender"]',
- 'targetStereotype': '["are all hoes", "deserve to be hurt", "should be called hoes", "should be hit if they hit first"]',
- 'dataSource': 't/davidson',
- 'tier 1': 'The statement implies that there is an unfair double standard between how men and women are treated in relationships, specifically regarding behavior like being "a hoe" or defending oneself by hitting back. This can be offensive because it generalizes people based on gender, reinforces harmful stereotypes, and suggests that women are judged more harshly for similar actions than men, which perpetuates inequality.',
- 'tier 2': 'The statement reinforces harmful stereotypes by implying that girls are judged harshly for certain behaviors while boys are not held to the same standards, which perpetuates inequality and disrespect. It also suggests that men should not defend themselves, which can enable harmful behavior. These ideas contribute to a culture of sexism and are therefore offensive.',
- 'tier 3': 'The statement reinforces harmful stereotypes about women, implying they are "all hoes" and suggesting they "deserve to be hurt" or "should be hit if they hit first." This perpetuates a double standard that unfairly targets women, reinforcing gender-based prejudice and violence. It is offensive because it dehumanizes and justifies mistreatment based on gender.'
+ "base_model": "Qwen3-14B-Q8_0",
+ "set": "train",
+ "post": "just like girls can't be a hoe.... guys can't hit a girl back... it's a double standard that will forever exist....",
+ "is_offensive": 0.75,
+ "targetMinority": "['women']",
+ "targetCategory": "['gender']",
+ "targetStereotype": ["are all hoes", "deserve to be hurt", "should be called hoes", "should be hit if they hit first"],
+ "dataSource": "t/davidson",
+ "tier 1": "The statement implies that there is an unfair double standard between how men and women are treated in relationships, specifically regarding behavior like being 'a hoe' or defending oneself by hitting back. This can be offensive because it generalizes people based on gender, reinforces harmful stereotypes, and suggests that women are judged more harshly for similar actions than men, which perpetuates inequality.",
+ "tier 2": "The statement reinforces harmful stereotypes by implying that girls are judged harshly for certain behaviors while boys are not held to the same standards, which perpetuates inequality and disrespect. It also suggests that men should not defend themselves, which can enable harmful behavior. These ideas contribute to a culture of sexism and are therefore offensive.",
+ "tier 3": "The statement reinforces harmful stereotypes about women, implying they are 'all hoes' and suggesting they 'deserve to be hurt' or 'should be hit if they hit first.' This perpetuates a double standard that unfairly targets women, reinforcing gender-based prejudice and violence. It is offensive because it dehumanizes and justifies mistreatment based on gender."
  }
 ```
 
@@ -95,6 +95,6 @@ To be filled
     url = "https://www.aclweb.org/anthology/2020.acl-main.486",
     doi = "10.18653/v1/2020.acl-main.486",
     pages = "5477--5490",
-    abstract = "Warning: this paper contains content that may be offensive or upsetting. Language has the power to reinforce stereotypes and project social biases onto others. At the core of the challenge is that it is rarely what is stated explicitly, but rather the implied meanings, that frame people{'}s judgments about others. For example, given a statement that {``}we shouldn{'}t lower our standards to hire more women,{''} most listeners will infer the implicature intended by the speaker - that {``}women (candidates) are less qualified.{''} Most semantic formalisms, to date, do not capture such pragmatic implications in which people express social biases and power differentials in language. We introduce Social Bias Frames, a new conceptual formalism that aims to model the pragmatic frames in which people project social biases and stereotypes onto others. In addition, we introduce the Social Bias Inference Corpus to support large-scale modelling and evaluation with 150k structured annotations of social media posts, covering over 34k implications about a thousand demographic groups. We then establish baseline approaches that learn to recover Social Bias Frames from unstructured text. We find that while state-of-the-art neural models are effective at high-level categorization of whether a given statement projects unwanted social bias (80{\%} F1), they are not effective at spelling out more detailed explanations in terms of Social Bias Frames. Our study motivates future work that combines structured pragmatic inference with commonsense reasoning on social implications.",
+    abstract = "Warning: this paper contains content that may be offensive or upsetting. Language has the power to reinforce stereotypes and project social biases onto others. At the core of the challenge is that it is rarely what is stated explicitly, but rather the implied meanings, that frame people{"}s judgments about others. For example, given a statement that {``}we shouldn{"}t lower our standards to hire more women,{""} most listeners will infer the implicature intended by the speaker - that {``}women (candidates) are less qualified.{""} Most semantic formalisms, to date, do not capture such pragmatic implications in which people express social biases and power differentials in language. We introduce Social Bias Frames, a new conceptual formalism that aims to model the pragmatic frames in which people project social biases and stereotypes onto others. In addition, we introduce the Social Bias Inference Corpus to support large-scale modelling and evaluation with 150k structured annotations of social media posts, covering over 34k implications about a thousand demographic groups. We then establish baseline approaches that learn to recover Social Bias Frames from unstructured text. We find that while state-of-the-art neural models are effective at high-level categorization of whether a given statement projects unwanted social bias (80{\%} F1), they are not effective at spelling out more detailed explanations in terms of Social Bias Frames. Our study motivates future work that combines structured pragmatic inference with commonsense reasoning on social implications.",
 }
 ```
