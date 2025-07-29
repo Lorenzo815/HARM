@@ -1,5 +1,9 @@
 # HARM
 
+## HARM-MOE-Off
+
+A notebook with guidance into how to run the model can be found [HERE](./HARM-MOE-Off/run.ipynb)
+
 ## SBIC-Explain 
 
 The dataset proposed by this work is based on the [original SBIC dataset](./README.md#original-sbic-reference).
