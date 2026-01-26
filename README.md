@@ -77,7 +77,14 @@ sbic_explain = pd.read_parquet("./SBIC-Explain.parque.gzip")
 ## Harm-reference
 
 ```
-To be filled
+@inproceedings{
+vecchi2026harm,
+title={{HARM}: Learning Hate-Aware Reward Model for Evaluating Natural Language Explanations of Offensive Content},
+author={Lorenzo Puppi Vecchi and Alceu de Souza Britto Jr. and Emerson Cabrera Paraiso and Rafael M. O. Cruz},
+booktitle={19th Conference of the European Chapter of the Association for Computational Linguistics},
+year={2026},
+url={https://openreview.net/forum?id=XStGy8dTOc}
+}
 ```
 
 ## Original SBIC-reference
