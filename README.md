@@ -77,13 +77,24 @@ sbic_explain = pd.read_parquet("./SBIC-Explain.parque.gzip")
 ## Harm-reference
 
 ```
-@inproceedings{
-vecchi2026harm,
-title={{HARM}: Learning Hate-Aware Reward Model for Evaluating Natural Language Explanations of Offensive Content},
-author={Lorenzo Puppi Vecchi and Alceu de Souza Britto Jr. and Emerson Cabrera Paraiso and Rafael M. O. Cruz},
-booktitle={19th Conference of the European Chapter of the Association for Computational Linguistics},
-year={2026},
-url={https://openreview.net/forum?id=XStGy8dTOc}
+@inproceedings{vecchi-etal-2026-harm,
+    title = "{HARM}: Learning Hate-Aware Reward Model for Evaluating Natural Language Explanations of Offensive Content",
+    author = "Vecchi, Lorenzo Puppi  and
+      Jr., Alceu De Souza Britto  and
+      Paraiso, Emerson Cabrera  and
+      M. O. Cruz, Rafael",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EACL} 2026",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-eacl.230/",
+    pages = "4393--4431",
+    ISBN = "979-8-89176-386-9",
+    abstract = "Explaining why content is hateful using natural language is crucial for fostering transparency in automated content moderation systems. However, evaluating the quality of such explanations remains an open challenge. General-purpose reward models (RMs), commonly used for scoring natural language outputs, are typically optimized for broad notions of safety. We argue that this optimization penalizes situations where references to stereotypes or offensive content are essential for explanations with higher explanatory fidelity. To address this gap, we introduce SBIC-Explain, a human-validated dataset of 370,788 LLM generated NLEs for offensive content, spanning three levels of human-annotated contextual richness: Tier 1: text-only, Tier 2: + classification-aware, and Tier 3: + semantics-informed. We hypothesize that as human-annotated context increases, explanations should lead to higher perceived explanations with higher explanatory fidelity. Yet, we find that existing RMs systematically assign lower scores to more contextually rich (and often more offensive) explanations, revealing a misalignment between model preferences and explanatory fidelity for this context. We propose HARM (Hate-Aware Reward Model), a RM that integrates interpretable signals to better align reward scores with the needs of hate speech explanation. HARM outperforms general-purpose baselines, improving NLE pair-wise preference. Available at: https://github.com/Lorenzo815/HARM."
 }
 ```
 
